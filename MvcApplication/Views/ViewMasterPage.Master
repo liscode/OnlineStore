@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    <link href="/Css/StyleSheet.css" rel="stylesheet" />
+    <script src="/Scripts/JavaScript.js"></script>
+    <asp:ContentPlaceHolder ID="jsContent" runat="server" />
+</head>
+<body class="allBody">
+
+    <nav class="navbar navbar-inverse">
+
+        <a href="/Home" class="navbar-header" title="Flowers4UHomePage">
+           <span title="Flowers4UHomePage" class="flowericon"></span>
+        </a>
+        <ul class="nav navbar-nav">
+            <li><a href="/Home">Home Page</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Flowers<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Product?cat=Flowers&subcat=Bouquets">Bouquets</a></li>
+                    <li><a href="/Product?cat=Flowers&subcat=SweetBouquets">Sweet Bouquets</a></li>
+                    <li><a href="/Product?cat=Flowers&subcat=Vase">Vase</a></li>
+                    <li><a href="/Product?cat=Flowers&subcat=BridalBouquets">Bridal Bouquets</a></li>
+                    <li><a href="/Product?cat=Flowers&subcat=FlowersWreath">Flowers Wreath</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plants<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Product?cat=Plants&subcat=Plants">Plants</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/Product?cat=Plants&subcat=Orchids">Orchids</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gifts<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Product?cat=Gifts&subcat=NewBabyGirl">New Baby Girl</a></li>
+                    <li><a href="/Product?cat=Gifts&subcat=NewBabyBoy">New Baby Boy</a></li>
+                    <li><a href="/Product?cat=Gifts&subcat=SpaGifts">Spa Gifts</a></li>
+                </ul>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chocolate& Wine<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Product?cat=ChocolateAndWine&subcat=PersonChocolate">Person Chocolate</a></li>
+                    <li><a href="/Product?cat=ChocolateAndWine&subcat=BoxChocolate">Box Chocolate</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/Product?cat=ChocolateAndWine&subcat=Wine">Wine</a></li>
+                </ul>
+            <% if (Session["CurrentUser"] != null)
+           { %>
+            <li>
+              <%--  ///שולחים את שם הקונטרולר/שם הפונקציה, בגלל שהפונקציה שלנו אינדקס נשלח רק את שם הקונטרולר--%>
+                <a href="/UploadFile" class="dropdown">Upload File</a>
+            </li>
+            <% } %>
+        </ul>
+
+
+        <% if (Session["CurrentUser"] == null)
+           { %>
+        <div class="nav navbar-nav navbar-right">
+            <form class="contact_form contact_form_login" id="contact_form" method="post" action="/Login/SignIn">
+                <span class="textboxmail">
+                    <input type="text" name="email" placeholder="Email">
+                </span>
+                <span class="textboxpass">
+                    <input type="password" name="password" placeholder="Password">
+                </span>
+                <span>
+                     <input type="submit" class="submitTop" value="Login">
+                </span>
+                <span>
+                    <a href="/Login/Signup" class="connect"><span class="glyphicon glyphicon-user"></span>SignUp</a>
+                </span>
+            </form>
+             <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">The e-mail or password is uncorrect</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Please close and try again layter</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <% }
+           else
+           { %>
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <div class="hellowUser">
+                    <span>Hello <%= Session["FirstName"].ToString() %></span>
+                </div>
+          </li>
+            <li>
+                <a href="/Login/Signout"><span class="glyphicon glyphicon-user"></span>Sign out</a>
+            </li>
+        </ul>
+        <% } %>
+    </nav>
+    <div style="margin-bottom:0 0 100px">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+        </div>
+    <footer class="linkBottom">
+        <span><a href="/About">&nbsp;&nbsp;About us&nbsp;&nbsp;</a>
+            <a href="#">&nbsp;&nbsp;Stores&nbsp;&nbsp;</a>
+            <a href="#">&nbsp;&nbsp;Customer Service&nbsp;&nbsp;</a>
+            <a href="#">&nbsp;&nbsp;Operating hours&nbsp;&nbsp;</a>
+            <a href="#">&nbsp;&nbsp;Common Question&nbsp;&nbsp;</a></span>
+    </footer>
+</body>
+</html>
