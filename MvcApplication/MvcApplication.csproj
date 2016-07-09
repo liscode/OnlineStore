@@ -142,9 +142,9 @@
     <Content Include="Css\Images\Bride\bride9.jpg" />
     <Content Include="Css\Images\Flowers\flower.jpg" />
     <Content Include="Css\Images\Flowers\flower10.jpg" />
-    <Content Include="Css\Images\Flowers\flower11.jpg" />
+    <Content Include="Css\Images\Flowers\flowerSaffron.jpg" />
     <Content Include="Css\Images\Flowers\flower12.jpg" />
-    <Content Include="Css\Images\Flowers\flower13.jpg" />
+    <Content Include="Css\Images\Flowers\flowerChai.jpg" />
     <Content Include="Css\Images\Flowers\flower14.jpg" />
     <Content Include="Css\Images\Flowers\flower15.jpg" />
     <Content Include="Css\Images\Flowers\flower4.jpg" />
@@ -200,7 +200,6 @@
     <Content Include="Scripts\uploadFile.js" />
     <Content Include="Views\FooterMenu\AboutView.aspx" />
     <Content Include="Views\Home\HomeView.aspx" />
-    <Content Include="Views\HtmlPage.html" />
     <Content Include="Views\Login\SignUpView.aspx" />
     <Content Include="Css\StyleSheet.css" />
     <Content Include="Views\Product\ProductView.aspx" />

@@ -307,3 +307,48 @@ html {
 .btn btn-default {
     background-color:red;
 }
+
+.rowprow {
+    width:100%;
+}
+
+.productleft, .productmiddle, .productright  { 
+    height:500px;
+     float:left;
+     width:33%;
+}
+
+
+.product {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    border: 1px none;
+
+}
+
+.imagepro {
+    margin-top: 30px;
+    width:250px;
+    height: 200px;
+}
+
+.btnmoredetails {
+    margin-top:30px;
+     margin-bottom:30px;
+}
+
+.left {
+    text-align:left;
+    float:left;
+}
+
+.right {
+    text-align:right;
+    float:right;
+}
+
+.nameProduct {
+    margin:20px;
+}
+

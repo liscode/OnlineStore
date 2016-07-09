@@ -18,6 +18,9 @@ namespace MvcApplication.Controllers
         {
             Product modelProduct = new Product();
             // BL - Select Product (minRow = 1, maxRow = 3)
+          //  string connectionString = ConfigurationManager.ConnectionStrings["FilesCS"].ConnectionString;
+           // BL.BL bl = new BL.BL(connectionString);
+           // DataTable dt = bl.SelectProduct(categoryName, subCategoryName, minRow, maxRow);
             return View("ProductView", modelProduct);
         }
 

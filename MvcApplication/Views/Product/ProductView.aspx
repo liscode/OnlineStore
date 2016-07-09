@@ -11,20 +11,65 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>ProductView</h2>
+    <h2>&nbsp;ProductView</h2>
 
- <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="../../Css/Images/flower.png" alt="flower">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">See in full page</a> <a href="#" class="btn btn-default" role="button">Add To Bag</a></p>
-      </div>
-    </div>
-  </div>
- </div>
+    <div class="rowPro">
+        <div class="productleft">
+            <div class="product">
+                <div class="image">
+                    <img src="../../Css/Images/Flowers/flowerChai.jpg" class="imagepro" alt="flower">
+                </div>
+                <div class="nameProduct">
+                    <div class="left">
+                        <b>Chai</b>
+                    </div>
+                    <div class="right">
+                        <b>94 NIS</b>
+                    </div>
+                </div>
+                <div class="btnmoredetails">
+                    <a href="#" class="btn btn-primary btnmoredetails" role="button">more details</a>
+                </div>
+               </div>
+            </div>
+          <div class="productmiddle">
+            <div class="product">
+                <div class="image">
+                    <img src="../../Css/Images/Flowers/flowerVelvet.jpg" class="imagepro" alt="flower">
+                </div>
+                <div class="nameProduct">
+                    <div class="left">
+                        <b>Velvet</b>
+                    </div>
+                    <div class="right">
+                        <b>104 NIS</b>
+                    </div>
+                </div>
+                <div class="btnmoredetails">
+                    <a href="#" class="btn btn-primary btnmoredetails" role="button">more details</a>
+                </div>
+               </div>
+            </div>
+        <div class="productright">
+            <div class="product">
+                <div class="image">
+                    <img src="../../Css/Images/Flowers/flowerAnise.jpg" class="imagepro" alt="flower">
+                </div>
+                <div class="nameProduct">
+                    <div class="left">
+                        <b>Anise</b>
+                    </div>
+                    <div class="right">
+                        <b>120 NIS</b>
+                    </div>
+                </div>
+                <div class="btnmoredetails">
+                    <a href="#" class="btn btn-primary btnmoredetails" role="button">more details</a>
+                </div>
+               </div>
+            </div>
+        </div>
+    
 
 </asp:Content>
 
