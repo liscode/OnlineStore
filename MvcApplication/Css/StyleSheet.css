@@ -89,9 +89,13 @@
     color:#28a8c4;
     background-color: Transparent;
     background-repeat:no-repeat;
-    border: none;
+     border: 0px solid;
     cursor:pointer;
     overflow: hidden;
+    outline:none;
+}
+
+.submitTop submitTop:hover {
     outline:none;
 }
 
@@ -312,7 +316,7 @@ html {
     width:100%;
 }
 
-.productleft, .productmiddle, .productright  { 
+.productLeft, .productMiddle, .productRight  { 
     height:500px;
      float:left;
      width:33%;
@@ -324,7 +328,6 @@ html {
     width: 300px;
     margin: auto;
     border: 1px none;
-
 }
 
 .imagepro {

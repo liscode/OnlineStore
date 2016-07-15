@@ -130,67 +130,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="Css\Images\Bride\bride1.jpg" />
-    <Content Include="Css\Images\Bride\bride10.jpg" />
-    <Content Include="Css\Images\Bride\Bride2.jpg" />
-    <Content Include="Css\Images\Bride\bride3.jpg" />
-    <Content Include="Css\Images\Bride\bride4.jpg" />
-    <Content Include="Css\Images\Bride\bride5.jpg" />
-    <Content Include="Css\Images\Bride\bride6.jpg" />
-    <Content Include="Css\Images\Bride\bride7.jpg" />
-    <Content Include="Css\Images\Bride\bride8.jpg" />
-    <Content Include="Css\Images\Bride\bride9.jpg" />
-    <Content Include="Css\Images\Flowers\flower.jpg" />
-    <Content Include="Css\Images\Flowers\flower10.jpg" />
-    <Content Include="Css\Images\Flowers\flowerSaffron.jpg" />
-    <Content Include="Css\Images\Flowers\flower12.jpg" />
-    <Content Include="Css\Images\Flowers\flowerChai.jpg" />
-    <Content Include="Css\Images\Flowers\flower14.jpg" />
-    <Content Include="Css\Images\Flowers\flower15.jpg" />
-    <Content Include="Css\Images\Flowers\flower4.jpg" />
-    <Content Include="Css\Images\Flowers\flower6.jpg" />
-    <Content Include="Css\Images\Flowers\flower7.JPG" />
-    <Content Include="Css\Images\Flowers\flower8.jpg" />
-    <Content Include="Css\Images\Flowers\Fotflower9.jpg" />
-    <Content Include="Css\Images\Orchids\BigOrchids.jpg" />
-    <Content Include="Css\Images\Orchids\BigOrchids2.jpg" />
-    <Content Include="Css\Images\Orchids\MiniOrchids2.jpg" />
-    <Content Include="Css\Images\Orchids\Orchids1.jpg" />
-    <Content Include="Css\Images\Orchids\Orchids2.jpg" />
-    <Content Include="Css\Images\Orchids\Orchids3.jpg" />
-    <Content Include="Css\Images\Orchids\Orchids4.jpg" />
-    <Content Include="Css\Images\Orchids\Orchids5.jpg" />
-    <Content Include="Css\Images\Orchids\Orchids6.png" />
-    <Content Include="Css\Images\Orchids\OrchidsMini1.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets10.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets11.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets12.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets2.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets2.png" />
-    <Content Include="Css\Images\Bouquets\Bouquets3.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets3.png" />
-    <Content Include="Css\Images\Bouquets\Bouquets4.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets5.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets6.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets7.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets8.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets9.jpg" />
-    <Content Include="Css\Images\Bouquets\Bouquets_burned.jpg" />
     <Content Include="Css\Images\flower.png" />
-    <Content Include="Css\Images\Flowers\flower2.jpg" />
-    <Content Include="Css\Images\Flowers\flower3.jpg" />
     <Content Include="Css\Images\flowericon.png" />
     <Content Include="Css\Images\invalid.png" />
-    <Content Include="Css\Images\Sweet\sweet.jpg" />
-    <Content Include="Css\Images\Sweet\sweet2.jpg" />
-    <Content Include="Css\Images\Sweet\sweet3.jpg" />
-    <Content Include="Css\Images\Sweet\sweet4.jpg" />
-    <Content Include="Css\Images\Sweet\sweet5.jpg" />
-    <Content Include="Css\Images\Sweet\sweet6.gif" />
-    <Content Include="Css\Images\Sweet\sweet6.JPG" />
-    <Content Include="Css\Images\Sweet\sweet7.jpg" />
-    <Content Include="Css\Images\Sweet\sweet8.jpg" />
     <Content Include="Css\Images\valid.png" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\JavaScript.js" />
@@ -213,11 +155,7 @@
     </Content>
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Css\Images\ChocolateAndWine\" />
-    <Folder Include="Css\Images\Gifts\" />
-    <Folder Include="Pic\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
