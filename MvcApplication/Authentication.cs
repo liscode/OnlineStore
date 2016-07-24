@@ -23,18 +23,5 @@ namespace MvcApplication
 
             return hash.ToString();
         }
-
-        public static bool SignIn(string email, string password)
-        {
-            BL.BL bl = new BL.BL("dasdada");
-            DataTable dt = bl.GetSaltAndHashResult(email);
-            //יצור salt
-            string salt = dt.Rows[0]["salt"].ToString();
-            string hashResultFromDB = dt.Rows[0]["hashResult"].ToString();
-            string hashResultFromCSharp = sha256(password + salt + SECRET_KEY);
-            bool isAuthenticate = hashResultFromDB == hashResultFromCSharp;
-
-            return isAuthenticate;
-        }
     }
 }

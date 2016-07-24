@@ -118,7 +118,7 @@ namespace MvcApplication.Controllers
             //שולחים למאגר את הפרמטרים הרצויים של המשתמש שיצרנו
             string connectionString = ConfigurationManager.ConnectionStrings["FilesCS"].ConnectionString;
             BL.BL bl = new BL.BL(connectionString);
-            long id = bl.InsertUserLogin(firstName, lastName, email, null, loginSalt, hashResult);
+            long id = bl.InsertUser(firstName, lastName, email, null, loginSalt, hashResult);
             if (id == -1)
             {
                 SignUp modelSignUp = new SignUp();

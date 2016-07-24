@@ -17,10 +17,8 @@ namespace MvcApplication.Controllers
         public ActionResult Index(string cat, string subcat)
         {
             Product modelProduct = new Product();
-            // BL - Select Product (minRow = 1, maxRow = 3)
-          //  string connectionString = ConfigurationManager.ConnectionStrings["FilesCS"].ConnectionString;
-           // BL.BL bl = new BL.BL(connectionString);
-           // DataTable dt = bl.SelectProduct(categoryName, subCategoryName, minRow, maxRow);
+            modelProduct.Cat = cat;
+            modelProduct.SubCat = subcat;
             return View("ProductView", modelProduct);
         }
 

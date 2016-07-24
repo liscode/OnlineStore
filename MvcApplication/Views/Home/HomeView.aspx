@@ -5,7 +5,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<h2>Content HomeView</h2> 
+<h2>Home Page</h2> 
     
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -18,21 +18,21 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-       <img src="\Images\FileWebSitePhotos\Flowers\flowercolor.jpg" alt="flower">
+       <img src="\Images\FileWebSitePhotos\Flowers\flowerPureHome.png" alt="flower">
       <div class="carousel-caption">
        Amazing Flowers
       </div>
     </div>
     <div class="item">
-      <img src="\Images\FileWebSitePhotos\Bouquets\Bouquets3.png" alt="flower">
+      <img src="\Images\FileWebSitePhotos\Bouquets\WhiteBouquets.png" alt="flower">
       <div class="carousel-caption">
-        עציצים נבחרים
+        Favourite Bouquets
       </div>
     </div>
        <div class="item">
-      <img src="\Images\FileWebSitePhotos\Sweet\BigParty.jpg" alt="flower">
+      <img src="\Images\FileWebSitePhotos\Sweet\BigPartyback.png" alt="flower">
       <div class="carousel-caption">
-        זרים מתוקים
+        Sweet Bouquets
       </div>
     </div>
   </div>

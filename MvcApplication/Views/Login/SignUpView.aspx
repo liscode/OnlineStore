@@ -19,19 +19,19 @@
 
         <form class="contact_form" autocomplete="off" id="contact_form" method="post" action="/Login/Submit">
             <p>
-                <input id="fname" name="firstName" type="text" placeholder="Your First Name" required>
+                <input class="signUpInput" id="fname" name="firstName" minlength="2" type="text" placeholder="Your First Name" required>
             </p>
             <p>
-                <input id="lname" name="lastName" type="text" placeholder="Your Last Name" required>
+                <input class="signUpInput" id="lname" name="lastName" minlength="2" type="text" placeholder="Your Last Name" required>
             </p>
             <p>                
-                <input id="cemail" type="email" name="email" placeholder="Your E-Mail" required>                                        
+                <input class="signUpInput" id="cemail" type="email" name="email" placeholder="Your E-Mail" required>                                        
             </p>
             <p>
-                <input id="pass" name="password" type="password" placeholder="Your Password" required>
+                <input class="signUpInput" id="pass" name="password" minlength="6" type="password" placeholder="Your Password" required>
             </p>
             <p>
-                <input class="submit" type="submit" value="Add Me Now">
+                <input class="submitSignUp" type="submit" value="Add Me Now">
             </p>
         </form>
           

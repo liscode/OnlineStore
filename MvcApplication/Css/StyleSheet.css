@@ -1,174 +1,123 @@
-﻿.userLogin a:link {
-    color: gray;
+﻿/*ALL WEBSITE*/
+.allBody {
+    background:no-repeat;
+    background-size:cover;
+    background-image: url(/Css/Images/imagesBackground.jpg);
 }
 
-.navbar navbar-inverse {
-    background-color: #9fd574;
-}
-
-
-.Conect {
-    color: #9d9d9d;
-}
-
-.nav navbar-nav navbar-right, hellowUser {
-    margin: auto;
-    text-align:center;
-}
-
-.textbox {
-    color: gray;
-    border-radius:3px;
-    padding-right: 10px;
-    padding-top:10px;
-}
-
-/* FORM VALIDATION !!! */
-
-:-moz-placeholder {
-    color: #aaa;
-}
- 
-:-webkit-input-placeholder {
-    color: gray;
-}
-
-*:focus {
-    outline: none;
-    color: #aaa;
-}
-
-.contact_form h2, .contact_form label {
-    font-family: Georgia, Times, "Times New Roman", serif;
-}
-
-.form_hint, .required_notification {
-    font-size: 11px;
-}
-
-.form_hint {
-    position:absolute;
-}
-
-.contact_form h2 {
+/*ALL WEBSITE*/
+html, .allBody {
     margin: 0;
-    display: inline;
+    padding: 0;
 }
 
-.required_notification {
-    color: #d45252;
-    margin: 5px 0 0 0;
-    display: inline;
-    float: right;
-}
-
-.contact_form input:focus {
-    color:#28a8c4;
-    border:none;
-    box-shadow: 0 0 3px #aaa; 
-}
-
-.contact_form input {  
-    height: 30px;
-    padding: 8px; 
-    border-radius:3px;
-    border:1px solid #aaa;
-    -moz-transition: padding .25s; 
-    -webkit-transition: padding .25s; 
-	-o-transition: padding .25s;
-	transition: padding .25s;  
-}
-
-/* Button Style */
-
-.contact_form button {
-    margin-left: 5px;
-}
-
-.contact_form input.submitTop {
-    color:#28a8c4;
-    background-color: Transparent;
-    background-repeat:no-repeat;
-     border: 0px solid;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
-
-.submitTop submitTop:hover {
-    outline:none;
-}
-
-button.submit {
-    background-color: #356b0b;
-    height: 30px;
-    border: 1px solid #509111;
-    border-bottom: 1px solid #5b992b;
-    border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #9fd574;
-    font-weight: bold;
-    padding: 6px 20px;
-    text-align: center;
-    text-shadow: 0 -1px 0 #396715;
-}
-button.submit:hover {
-    opacity:.85;
-    cursor: pointer; 
-}
-    button.submit:active {
-        border: 1px solid #20911e;
-        box-shadow: 0 0 10px 5px #356b0b inset;
-        -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
-        -moz-box-shadow: 0 0 10px 5px #356b0b inset;
-        -ms-box-shadow: 0 0 10px 5px #356b0b inset;
-        -o-box-shadow: 0 0 10px 5px #356b0b inset;  
-    }
-
-.contact_form input:focus + .form_hint {display: inline;}
- /* change form hint color when valid */
-.contact_form input:required:valid + .form_hint::before {color:#28921f;}
-
-
-
+/*ALL WEBSITE*/
 body > div {
     text-align: center;
     margin-top: 15px;
 }
 
- /* when a field is considered invalid by the browser */
-.contact_form input:focus:invalid, .invalidInput {
-    background: #fff url(images/invalid.png) no-repeat 98% center;
-    box-shadow: 0 0 5px #d45252;
-    border-color: #b03535;
-}
-
-/* when a field is considered valid by the browser */
-.contact_form input:required:valid, .validInput {
-    background: #fff url(images/valid.png) no-repeat 98% center;
-    box-shadow: 0 0 5px #5cd053;
-    border-color: #28921f;
-}
-
-.contact_form input:focus + .form_hint
- {display: inline;}
-.contact_form input:required:valid + .form_hint
- {background: #28921f;} /* change form hint color when valid */
-.contact_form input:required:valid + .form_hint::before
- {color:#28921f;} /* change form hint arrow color when valid */
-
-div.signup {
-    width:300px;
-    margin: auto;
-    border-style:solid;
-    border-color:#aaa;
-    background-color:white;
-}
-
+/*ALL WEBSITE*/
 html {
     min-height: 100%;
     position: relative;
 }
 
+/*ALL WEBSITE-buttom*/
+.submitSignUp, .btnmoredetails>a, .btn btn-primary btnmoredetails, .btnMoreItems {
+   
+    background-image: none;
+    background-color:#333;
+    color:#abf54e;
+    height: 30px;
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    padding: 6px 20px;
+    text-align: center;
+}
+/*ALL WEBSITE- hover buttom*/
+.submitSignUp:hover, .btnmoredetails > a:hover, .btn btn-primary btnmoredetails:hover, .btnMoreItems:hover, .connect:hover {
+    color:white;
+    background-image: none;
+    background-color:#333;
+    }
+
+/*-------------------------------------MASTER PAGE-------------------------------------*/
+/*MASTER PAGE-nav-bar text design*/
+.navbar-inverse .navbar-brand , .navbar-inverse .navbar-nav > li > a, .connect {
+     color:#abf54e;
+     font-size: 16px;
+     padding-right:15px;
+}
+
+/*MASTER PAGE-nav-bar text design when you click on nav-bar*/
+.dropdown-toggle>a>ul > li {
+    background-color:white;
+    color:#9d9d9d;
+}
+
+ /*MASTER PAGE-icon login on top nav-bar left*/
+.loginicon {
+    height:16px;
+    width:16px;
+}
+
+ /*MASTER PAGE-icon flower on top nav-bar left*/
+.flowericon {
+    background: no-repeat
+        url(/Css/Images/flower.png);
+    height:40px;
+    width:40px;
+    display:inline-block; 
+    margin-top: 3px;
+    color:#abf54e;
+
+}
+
+/*MASTER PAGE-nave-bar top right*/
+.nav navbar-nav navbar-right, hellowUser, .contact_form contact_form_login {
+    margin: auto;
+    text-align:center;
+     padding-right:20px;
+     margin-right:15px;
+}
+
+/*MASTER PAGE-text Box top right*/
+.textbox {
+    color: gray;
+    border-radius:3px;
+    padding-right: 10px;
+    padding-top:5px;
+    width:200px;
+}
+
+/*MASTER PAGE-text Box top right*/
+.textboxmail, .textboxpass,.textboxmail:after, .textboxpass:after  {
+    width:200px;
+}
+
+/*MASTER PAGE-buttom login on top navber*/
+.contact_form input.submitTop, loginicon {
+    color:#abf54e;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 0px solid;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding-left:0px;
+    font-size:16px;
+}
+
+/*MASTER PAGE-buttom login on top navber-hover*/
+ .contact_form input.submitTop:hover, loginicon:hover {
+    outline:none;
+    color:white;
+    text-decoration: underline;
+}
+
+/*MASTER PAGE-bottom links design*/
 .linkBottom {    
    text-align: center;
    position: absolute;
@@ -178,37 +127,18 @@ html {
    width: 100%;
 }
 
-    .linkb > span > a {
-           color:#333;
-    }
-
-.glyphicon glyphicon-user {
-    color:#356b0b;
+/*MASTER PAGE-bottom links color*/
+.linkBottom > span > a {
+   color:#222;
 }
 
-/*.connect {
-    color:#9fd574;
-}*/
-
-.connect:hover {
-    color:#fff;
+/*MASTER PAGE-bottom links hover*/
+.linkBottom > span > a:hover {
+  color:#abf54e;
+  background-color:#222;
 }
 
-.contact_form_login {
-    margin-right:25px;
-}
-.allBody {
-    background-color:aliceblue;
-}
-
-/*.navbar-inverse .navbar-brand , .navbar-inverse .navbar-nav > li > a {
-     color:green;
-}*/
-
-.navbar-inverse .navbar-brand , .navbar-inverse .navbar-nav > li > a, .connect {
-     color:#28a8c4;
-}
-
+/*MASTER PAGE-nav bar when user connect*/
 .hellowUser {
     color:white;
     display: inline-block;
@@ -216,23 +146,136 @@ html {
     padding: 10px;
 }
 
-.dropzone {
+/*-------------------------------------SIGNUP PAGE-------------------------------------*/
+/* SIGNUP PAGE- signup frame */
+.signup {
+    border-radius:10px;
+    margin-top:60px;
+    border-style:solid;
+    border-color:#aaa;
+    background-color:white;
+    width:300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* SIGNUP PAGE- signup all input text-box */
+.signUpInput {
+    width:250px;
+}  
+
+/* SIGNUP PAGE- signup frame all textbox */
+.contact_form input {  
+    height: 30px;
+    margin-top:10px;
+    border-radius:3px;
+    border:1px solid #aaa;
+    -moz-transition: padding .25s; 
+    -webkit-transition: padding .25s; 
+	-o-transition: padding .25s;
+	transition: padding .25s; 
+}
+/*form validation !!!*/
+:-moz-placeholder {
+    color: #aaa;
+}
+
+ /*SIGNUP PAGE*/
+.contact_form input:focus + .form_hint{
+    display: inline;
+     width:250px;
+}
+ /* SIGNUP PAGE- change form hint color when valid */
+.contact_form input:required:valid + .form_hint:before {
+   color:#28921f;
+   width:250px;
+}
+ 
+/* SIGNUP PAGE*/
+:-webkit-input-placeholder {
+    color: gray;
+}
+
+/* SIGNUP PAGE*/
+*:focus {
+    outline: none;
+    color: #aaa;
+}
+
+/* SIGNUP PAGE- h2+ textbox */
+.contact_form h2, .contact_form label {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/* SIGNUP PAGE*/
+.form_hint, .required_notification {
+    font-size: 11px;
+}
+
+/* SIGNUP PAGE*/
+.form_hint {
+    position:absolute;
+}
+
+/* SIGNUP PAGE*/
+.contact_form h2 {
+    margin: 0;
+    display: inline;
+}
+
+/* SIGNUP PAGE*/
+.required_notification {
+    color: #d45252;
+    margin: 5px 0 0 0;
+    display: inline;
+    float: right;
+}
+
+/* SIGNUP PAGE*/
+.contact_form input:focus {
+    color:#28a8c4;
+    border:none;
+    box-shadow: 0 0 3px #aaa; 
+}
+
+ /* SIGNUP PAGE VALIDATION- when a field is considered invalid by the browser */
+.contact_form input:focus:invalid, .invalidInput {
+    background: #fff url(images/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+     width:250px;
+}
+
+/*SIGNUP PAGE VALIDATION- when a field is considered valid by the browser */
+.contact_form input:required:valid, .validInput {
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+     width:250px;
+}
+
+/*SIGNUP PAGE VALIDATION*/
+.contact_form input:focus + .form_hint
+ {display: inline;}
+.contact_form input:required:valid + .form_hint
+ {background: #28921f;} /* change form hint color when valid */
+.contact_form input:required:valid + .form_hint::before
+ {color:#28921f;} /* change form hint arrow color when valid */
+
+/* SIGNUP PAGE- Button Style */
+.contact_form button {
+    margin-left: 5px;
+}
+
+/*when you uses in dropzone library*/
+/*.dropzone {
       width: 400px;
       background: none;
       border: none;
       text-align: center;
       margin: auto;       
-}
+}*/
 
-.flowericon {
-    background: no-repeat
-        url(/Css/Images/flower.png);
-    height:40px;
-    width:40px;
-    display:inline-block; 
-    margin-top: 4px;
-
-}
 
 .files-list, .firstlist, .list {
     width: 300px;
@@ -247,49 +290,13 @@ html {
     padding: 7px 14px;
 }
 
-.sort{
-    margin-top:15px;
-    background-color: rgba(255, 255, 255, 0.55);
-    border: none;
-    border-radius: 30px;
-}
-
-.sort:hover {
-  text-decoration: none;
-}
-.sort:focus {
-  outline:none;
-}
-.sort:after {
-  display:inline-block;
-  width: 0;
-  height: 0;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
-}
-.sort.asc:after {
-  width: 0;
-  height: 0;
-  content:"";
-  position: relative;
-  top:4px;
-  right:-5px;
-}
-.sort.desc:after {
-  width: 0;
-  height: 0;
-  content:"";
-  position: relative;
-  top:-4px;
-  right:-5px;
-}
-
+/*-------------------------------------HOME PAGE-----------------------------------*/
+/*HOME PAGE-carousel viewer*/
 .carousel-inner {
-    width: 200px;
-    height:200px;
+    width: 300px;
+    height:300px;
     margin:auto;
+    margin-top:60px;
 }
 
 .name {
@@ -316,42 +323,110 @@ html {
     width:100%;
 }
 
+/*-------------------------------------PRODUCT PAGE-----------------------------------*/
+
+/*PRODUCT PAGE- all three product display*/
 .productLeft, .productMiddle, .productRight  { 
-    height:500px;
+    height:400px;
      float:left;
      width:33%;
 }
 
-
+/*PRODUCT PAGE JS- display for each product*/
 .product {
     background-color: white;
     width: 300px;
     margin: auto;
-    border: 1px none;
+    border: 1px solid;
 }
 
+/*PRODUCT PAGE JS- display for each picture*/
 .imagepro {
     margin-top: 30px;
     width:250px;
     height: 200px;
 }
 
-.btnmoredetails {
-    margin-top:30px;
-     margin-bottom:30px;
-}
-
-.left {
+/*PRODUCT PAGE JS- name product location*/
+.namepro {
     text-align:left;
     float:left;
 }
 
-.right {
+/*PRODUCT PAGE JS- price product location*/
+.pricepro {
     text-align:right;
     float:right;
 }
 
-.nameProduct {
+/*PRODUCT PAGE JS- all name+price product location*/
+.namePriceProduct {
     margin:20px;
 }
+
+/*JS PRODUCT PAGE*/
+.btnmoredetails {  
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/*button.submit:hover, .btn btn-primary btnmoredetails {
+    opacity:.85;
+    cursor: pointer; 
+}
+
+    button.submit:active, .btn btn-primary btnmoredetails {
+        border: 1px solid #20911e;
+        box-shadow: 0 0 10px 5px #356b0b inset;
+        -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+        -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+        -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+        -o-box-shadow: 0 0 10px 5px #356b0b inset;  
+    }*/
+
+/*---------------------------------------UPLOAD PAGE-----------------------------------------*/
+.sort{
+    margin-top:15px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border: none;
+    border-radius: 30px;
+}
+
+/*UPLOAD PAGE*/
+.sort:hover {
+  text-decoration: none;
+}
+/*UPLOAD PAGE*/
+.sort:focus {
+  outline:none;
+}
+/*UPLOAD PAGE*/
+.sort:after {
+  display:inline-block;
+  width: 0;
+  height: 0;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+/*UPLOAD PAGE*/
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  content:"";
+  position: relative;
+  top:4px;
+  right:-5px;
+}
+/*UPLOAD PAGE*/
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  content:"";
+  position: relative;
+  top:-4px;
+  right:-5px;
+}
+
 

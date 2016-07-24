@@ -132,11 +132,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Css\Images\flower.png" />
     <Content Include="Css\Images\flowericon.png" />
+    <Content Include="Css\Images\background.jpg" />
     <Content Include="Css\Images\invalid.png" />
+    <Content Include="Css\Images\login.png" />
     <Content Include="Css\Images\valid.png" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\JavaScript.js" />
     <Content Include="Scripts\product.js" />
+    <Content Include="Scripts\product_react.js" />
     <Content Include="Scripts\signIn.js" />
     <Content Include="Scripts\signUp.js" />
     <Content Include="Scripts\uploadFile.js" />

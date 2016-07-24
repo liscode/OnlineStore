@@ -22,7 +22,8 @@ namespace BL
             this.dbConn = new DAL.DbConnection(connectionString);
         }
 
-        //פונקציה שמטרתה לקבל שם, גודל נתיב ואידי של יוזר ולהפעיל פרוצדורה בsql 
+        //function- get name, size, path, and userid 
+        //and active procedure in sql
         public DataTable InsertMetaDataUser(string name, string size, string path, int userID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
@@ -58,31 +59,10 @@ namespace BL
             return dt;
         }
 
-        //פונקציה שמטרתה לקבל יוזראיידי
-        //ולהפעיל את הפרוצדורה בsql
-        public DataTable SelectUserFiles(string userID)
-        {
-            //יוצרים ליסט-אסקיואל פרמטר על מנת להוסיף את הפרמטרים הרצויים 
-            //מפה הליסט עובד לדאל והדאל מעביר לאסקיואל עם הפרמטרים הרצויים
-            List<SqlParameter> parameters = new List<SqlParameter>();
-
-            SqlParameter paramUserID = new SqlParameter("UserID", userID);
-            //כיוון הפרמטר שנשלח לפרוצדורה 
-            paramUserID.Direction = ParameterDirection.Input;
-
-            //הוספת הפרמטר לרשימה
-            parameters.Add(paramUserID);
-
-            DataTable dt = this.dbConn.ExecSP("dbo.SelectUserFiles", parameters);
-
-            return dt;
-
-        }
-
-        //כמו הפונקציה הקודמת, מקבלת פרמטרים ומכניסה אותם 
-        //לsql.
-        //פונקציה זו יוצרת יוזר חדש ולכן היא מקבלת את כל הפרמטרים הרצויים ומחזירה את האידי שנוצר
-        public long InsertUserLogin(string firstname, string lastname, string email, string role, string loginSalt, string loginHash)
+        //like last function, gets parameters and add them to sql
+       // this function create new user
+        //get all parmeter and return the userid that create
+        public long InsertUser(string firstname, string lastname, string email, string role, string loginSalt, string loginHash)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
@@ -136,9 +116,37 @@ namespace BL
             return id;
         }
 
-        public DataTable GetSaltAndHashResult(string email)
+        public DataTable SelectProduct(string categoryName, string subCategoryName, int minRow, int maxRow)
         {
-            return new DataTable();
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter paramCategoryName = new SqlParameter();
+            paramCategoryName.ParameterName = "CategoryName";
+            paramCategoryName.Value = categoryName;
+            paramCategoryName.Direction = ParameterDirection.Input;
+
+            SqlParameter paramSubCategoryName = new SqlParameter();
+            paramSubCategoryName.ParameterName = "SubCategoryName";
+            paramSubCategoryName.Value = subCategoryName;
+            paramSubCategoryName.Direction = ParameterDirection.Input;
+
+            SqlParameter paramMinRow = new SqlParameter();
+            paramMinRow.ParameterName = "MinRow";
+            paramMinRow.Value = minRow;
+            paramMinRow.Direction = ParameterDirection.Input;
+
+            SqlParameter paramMaxRow = new SqlParameter();
+            paramMaxRow.ParameterName = "MaxRow";
+            paramMaxRow.Value = maxRow;
+            paramMaxRow.Direction = ParameterDirection.Input;
+
+            parameters.Add(paramCategoryName);
+            parameters.Add(paramSubCategoryName);
+            parameters.Add(paramMinRow);
+            parameters.Add(paramMaxRow);
+
+            DataTable dt = this.dbConn.ExecSP("SelectProduct", parameters);
+            return dt;
         }
 
         public DataTable SelectUser(string email)
@@ -167,9 +175,25 @@ namespace BL
             }
         }
 
-        public DataTable SelectProduct(string categoryName, string subCategoryName, int minRow, int maxRow)
+        //function- get userid 
+        //and active procedure in sql
+        public DataTable SelectUserFiles(string userID)
         {
-            throw new NotImplementedException();
+            //Create list-sqlparameter to add the parameter teth we want
+            //from here- list moved to dal, dal move to move to sql whit the parmeter that we want
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter paramUserID = new SqlParameter("UserID", userID);
+            //direction parameter that send to procidure
+            paramUserID.Direction = ParameterDirection.Input;
+
+            //הוספת הפרמטר לרשימה
+            parameters.Add(paramUserID);
+
+            DataTable dt = this.dbConn.ExecSP("dbo.SelectUserFiles", parameters);
+
+            return dt;
         }
+       
     }
 }

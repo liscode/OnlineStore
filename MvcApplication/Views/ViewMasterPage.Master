@@ -57,6 +57,7 @@
                 <ul class="dropdown-menu">
                     <li><a href="/Product?cat=Gifts&subcat=NewBabyGirl">New Baby Girl</a></li>
                     <li><a href="/Product?cat=Gifts&subcat=NewBabyBoy">New Baby Boy</a></li>
+                    <li role="separator" class="divider"></li>
                     <li><a href="/Product?cat=Gifts&subcat=SpaGifts">Spa Gifts</a></li>
                 </ul>
             </li>
@@ -84,13 +85,14 @@
            { %>
         <div class="nav navbar-nav navbar-right">
             <form class="contact_form contact_form_login" id="contact_form" method="post" action="/Login/SignIn">
-                <span class="textboxmail">
-                    <input type="text" name="email" placeholder="Email">
-                </span>
-                <span class="textboxpass">
-                    <input type="password" name="password" placeholder="Password">
+                <span>
+                    <input type="text" class="textboxmail" name="email" placeholder="Email">
                 </span>
                 <span>
+                    <input type="password" class="textboxpass" name="password" placeholder="Password">
+                </span>
+                <span class="icon">
+                   
                      <input type="submit" class="submitTop" value="Login">
                 </span>
                 <span>
