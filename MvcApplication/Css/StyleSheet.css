@@ -37,7 +37,7 @@ html {
     text-align: center;
 }
 /*ALL WEBSITE- hover buttom*/
-.submitSignUp:hover, .btnmoredetails > a:hover, .btn btn-primary btnmoredetails:hover, .btnMoreItems:hover, .connect:hover {
+.submitSignUp:hover, .btnmoredetails > a:hover, .btn btn-primary btnmoredetails:hover, .btnMoreItems:hover,after, .connect:hover {
     color:white;
     background-image: none;
     background-color:#333;
@@ -80,25 +80,24 @@ html {
     margin: auto;
     text-align:center;
      padding-right:20px;
-     margin-right:15px;
 }
 
 /*MASTER PAGE-text Box top right*/
-.textbox {
+.textbox{
     color: gray;
     border-radius:3px;
     padding-right: 10px;
     padding-top:5px;
-    width:200px;
 }
 
-/*MASTER PAGE-text Box top right*/
-.textboxmail, .textboxpass,.textboxmail:after, .textboxpass:after  {
-    width:200px;
+
+/*MASTER PAGE-link top right*/
+.linksTop {
+    float: right;
 }
 
 /*MASTER PAGE-buttom login on top navber*/
-.contact_form input.submitTop, loginicon {
+.contact_form input.submitTop, loginicon, a.list-group-item {
     color:#abf54e;
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -110,18 +109,24 @@ html {
     font-size:16px;
 }
 
+/*MASTER PAGE-buttom login on top navber*/
+a.list-group-item {
+    margin-right: 5px;
+    padding: 2px;
+}
+
 /*MASTER PAGE-buttom login on top navber-hover*/
- .contact_form input.submitTop:hover, loginicon:hover {
+ a.list-group-item:hover {
     outline:none;
     color:white;
     text-decoration: underline;
+    background-color:#333;
 }
-
+ 
 /*MASTER PAGE-bottom links design*/
 .linkBottom {    
    text-align: center;
-   position: absolute;
-   bottom: 0;
+   bottom: 10px;
    left:0;
    overflow:hidden;   
    width: 100%;
@@ -293,10 +298,14 @@ html {
 /*-------------------------------------HOME PAGE-----------------------------------*/
 /*HOME PAGE-carousel viewer*/
 .carousel-inner {
-    width: 300px;
-    height:300px;
+    width: 350px;
+    height:350px;
     margin:auto;
     margin-top:60px;
+}
+
+.carousel-caption {
+    font-size:24px;
 }
 
 .name {
@@ -367,10 +376,10 @@ html {
 /*JS PRODUCT PAGE*/
 .btnmoredetails {  
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-/*button.submit:hover, .btn btn-primary btnmoredetails {
+button.submit:hover, .btn btn-primary btnmoredetails {
     opacity:.85;
     cursor: pointer; 
 }
@@ -382,7 +391,7 @@ html {
         -moz-box-shadow: 0 0 10px 5px #356b0b inset;
         -ms-box-shadow: 0 0 10px 5px #356b0b inset;
         -o-box-shadow: 0 0 10px 5px #356b0b inset;  
-    }*/
+    }
 
 /*---------------------------------------UPLOAD PAGE-----------------------------------------*/
 .sort{
